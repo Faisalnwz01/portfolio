@@ -16,7 +16,7 @@ disableKinds = ["taxonomy", "taxonomyTerm"] # This theme does not currently use 
     logoBig = "/images/logo.png"
     logoSmall = "/images/logo.png"
     favicon = "favicon.ico"
-    opengraphImage = "/images/osprey.png"
+    opengraphImage = "/images/logo.png"
     twitter = "faisalnwz01"
     linkedin = "faisalnwz"
     github = "faisalnwz01"
@@ -35,11 +35,11 @@ disableKinds = ["taxonomy", "taxonomyTerm"] # This theme does not currently use 
     url  = "/#about"
     weight = 1
 [[menu.main]]
-    name = "Probono projects"
+    name = "Probono"
     url  = "/#work"
     weight = 2
 [[menu.main]]
-    name = "Blog"
+    name = "Showcase"
     url  = "/#blog"
     weight = 3
 [[menu.main]]
