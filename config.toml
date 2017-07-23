@@ -1,10 +1,10 @@
 title = "Faisal's Portfolio"
-baseURL = "./"
+baseURL = "https://faisalnwz01.gitlab.io/portfolio"
 tags = ["portfolio", "web design", "blog"]
 languageCode = "en-US"
 config = "config.toml"
 theme = "osprey"
-canonifyURLS = false
+canonifyURLS = true
 googleAnalytics = ""
 disqusShortname = "faisalnwz01"
 disableKinds = ["taxonomy", "taxonomyTerm"] # This theme does not currently use "tag" and "category" taxonomies
