@@ -1,0 +1,48 @@
+title = "Faisal's Portfolio"
+baseURL = "http://faisal.nyc"
+tags = ["portfolio", "web design", "blog"]
+languageCode = "en-US"
+config = "config.toml"
+theme = "osprey"
+canonifyURLS = true
+googleAnalytics = ""
+disqusShortname = "faisalnwz01"
+disableKinds = ["taxonomy", "taxonomyTerm"] # This theme does not currently use "tag" and "category" taxonomies
+
+[Params]
+    tagline = "Faisal's Portfolio"
+    author = "Faisal Nawaz"
+    description = "Full-stack web developer and UI/UX enthusiast based in NYC"
+    logoBig = "/images/logo.png"
+    logoSmall = "/images/logo.png"
+    favicon = "favicon.ico"
+    opengraphImage = "/images/osprey.png"
+    twitter = "faisalnwz01"
+    linkedin = "faisalnwz"
+    github = "faisalnwz01"
+    email = ""
+    googleTagManager = ""
+    highlightJS = true
+    copyright = true
+    credit = true
+    customCSS = false
+    cacheBustCSS = false
+    cacheBustJS = false
+    ajaxFormspree = true
+
+[[menu.main]]
+    name = "Work"
+    url  = "/#work"
+    weight = 1
+[[menu.main]]
+    name = "Blog"
+    url  = "/#blog"
+    weight = 2
+[[menu.main]]
+    name = "About"
+    url  = "/#about"
+    weight = 3
+[[menu.main]]
+    name = "Contact"
+    url  = "/#contact"
+    weight = 4
