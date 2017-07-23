@@ -10,7 +10,7 @@ draft = false
 
 
 
-### Latest Adventures
+### Latest Adventures:([resume](/resume/Resume_Faisal_Nawaz.pdf))
 > Informz NBCU Team - Jan’16 - today
   <br>
  Sr. Front-end Developer- NYC
