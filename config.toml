@@ -1,5 +1,5 @@
 title = "Faisal's Portfolio"
-baseURL = "https://faisalnwz01.gitlab.io/portfolio"
+baseURL = "https://faisalnwz01.gitlab.io/portfolio/"
 tags = ["portfolio", "web design", "blog"]
 languageCode = "en-US"
 config = "config.toml"
