@@ -1,51 +1,51 @@
 @import url("https://fonts.googleapis.com/css?family=Rubik|Bitter");
 @import "flexboxgrid";
-
 // TODO: Cleanup.
-
 // Colors
 // https://coolors.co/1e1e1e-4e6b6c-f7f7f7-ffffff-da784d
 $black: #212121;
 $storm: #4E6B6C;
 $smoke: #F7F7F7;
 $accent: #DA784D;
-
 // Fonts
-$font-header: "Bitter", "Roboto Slab", "Cambria", Georgia, serif;
-$font-body: "Rubik", "Poppins", "Hel­vetica", Arial, sans-serif;
-$font-code: "Menlo", "Monaco", "Andale Mono", "lucida console", "Courier New", monospace;
-
+$font-header: "Bitter",
+"Roboto Slab",
+"Cambria",
+Georgia,
+serif;
+$font-body: "Rubik",
+"Poppins",
+"Hel­vetica",
+Arial,
+sans-serif;
+$font-code: "Menlo",
+"Monaco",
+"Andale Mono",
+"lucida console",
+"Courier New",
+monospace;
 // Modular font scale
 // Large: http://www.modularscale.com/?1.25&em&1.333&web&text
 // Medium: http://www.modularscale.com/?1.25&em&1.25&web&text
 // SMall: http://www.modularscale.com/?1.1&em&1.25&web&text
-
-$font-scale-large: (
-h1: 2.961rem,
+$font-scale-large: ( h1: 2.961rem,
 h2: 2.221rem,
 h3: 1.666rem,
-p: 1.25rem
-);
-$font-scale-medium: (
-h1: 2.441rem,
+p: 1.25rem);
+$font-scale-medium: ( h1: 2.441rem,
 h2: 1.953em,
 h3: 1.563rem,
 p: 1.25rem,
 );
-$font-scale-small: (
-h1: 2.148rem,
+$font-scale-small: ( h1: 2.148rem,
 h2: 1.719rem,
 h3: 1.375rem,
-p: 1.1rem
-);
-
+p: 1.1rem);
 $base-line-height: 1.6;
 $base-font-size: 1.25rem; // 20px
 $vertical-rhythm: $base-line-height * $base-font-size; // 2.125em or 34px
-
 $breakpoint-medium: 48em; // 768px
 $breakpoint-small: 25em; // 400px
-
 @mixin size($level) {
   font-size: map-get($font-scale-large, $level);
   @media (max-width: $breakpoint-medium) {
@@ -70,12 +70,12 @@ $breakpoint-small: 25em; // 400px
     }
   }
 }
+
 @media(max-width: 25em) {
   body .container {
     padding: $vertical-rhythm * 2 $vertical-rhythm;
   }
 }
-
 
 * {
   box-sizing: border-box;
@@ -85,32 +85,51 @@ $breakpoint-small: 25em; // 400px
   margin: 0;
   padding: 0;
   color: $black;
-  &:before, &:after {
+  &:before,
+  &:after {
     box-sizing: border-box;
   }
 }
+
 html {
   box-sizing: inherit;
   overflow-x: hidden;
 }
+
 body {
   @include size(p);
   font-family: $font-body;
   line-height: $base-line-height;
   color: $black;
 }
+
 header {
   height: 100vh;
   background-color: #FFF;
-  div { z-index: 101; }
-  img { max-height: $vertical-rhythm * 6; }
-  h1 { font-family: $font-body; }
-  .cursor { animation: 1s blink step-end infinite; }
+  div {
+    z-index: 101;
+  }
+  img {
+    max-height: $vertical-rhythm * 6;
+  }
+  h1 {
+    font-family: $font-body;
+  }
+  .cursor {
+    animation: 1s blink step-end infinite;
+  }
 }
+
 @keyframes "blink" {
-  from, to { color: transparent; }
-  50% { color: $black; }
+  from,
+  to {
+    color: transparent;
+  }
+  50% {
+    color: $black;
+  }
 }
+
 nav {
   height: $vertical-rhythm * 2;
   width: 100%;
@@ -119,7 +138,7 @@ nav {
   bottom: 0;
   z-index: 100;
   text-align: center;
-  box-shadow: 0 2px 2px rgba(0, 0, 0, .4 );
+  box-shadow: 0 2px 2px rgba(0, 0, 0, .4);
   h3 {
     margin: 0;
     font-family: $font-body;
@@ -130,18 +149,21 @@ nav {
   img {
     max-width: 2.5em;
   }
-  div.logo, div.nav-toggle {
+  div.logo,
+  div.nav-toggle {
     visibility: hidden;
   }
   .nav-toggle a {
     display: none;
   }
 }
+
 .nav-fixed {
   position: fixed;
   top: 0;
   bottom: auto;
 }
+
 .nav-full {
   position: fixed;
   top: 0;
@@ -159,29 +181,37 @@ nav {
     }
   }
 }
+
 .nav-full.active {
   transform: translate(-100vw, 0px);
 }
+
 main {
   background-color: #fff;
   transform: translate(0px, 0px);
   transition: 0.25s ease-in;
 }
+
 main.active {
   transform: translate(-100vw, 0px);
 }
+
 .container {
   max-width: 43.750rem; // 700px
   padding: $vertical-rhythm * 2 0 $vertical-rhythm * 2;
   margin: auto;
 }
+
 p {
   margin-bottom: $vertical-rhythm;
   code {
     font-family: $font-code;
   }
 }
-h1, h2, h3 {
+
+h1,
+h2,
+h3 {
   font-family: $font-header;
   margin-top: $vertical-rhythm;
   letter-spacing: 2px;
@@ -189,18 +219,33 @@ h1, h2, h3 {
     text-decoration: none;
   }
 }
-h1 { @include size(h1); }
-h2 { @include size(h2); }
-h3 { @include size(h3); }
+
+h1 {
+  @include size(h1);
+}
+
+h2 {
+  @include size(h2);
+}
+
+h3 {
+  @include size(h3);
+}
+
 strong {
   font-weight: 600;
 }
-del, s {
+
+del,
+s {
   text-decoration: line-through;
 }
-em, dfn {
+
+em,
+dfn {
   font-style: italic;
 }
+
 q {
   @extend em;
   &:before {
@@ -210,19 +255,24 @@ q {
     content: "\201D";
   }
 }
+
 a {
   text-decoration: none;
   transition: color .2s ease-out;
   img {
     border: none;
   }
-  &:hover { color: $accent }
+  &:hover {
+    color: $accent
+  }
 }
+
 img {
   margin: 0 auto;
   max-width: 100%;
   display: block;
 }
+
 pre {
   font: 12px "Consolas", "Liberation Mono", "Menlo", "Courier", monospace;
   background-color: $smoke;
@@ -234,7 +284,7 @@ pre {
   font-size: 85%;
   line-height: 1.45;
   font-family: $font-code;
-  > code {
+  >code {
     padding: 0;
     margin: 0;
     font-size: 100%;
@@ -253,23 +303,30 @@ pre {
     background-color: transparent;
     border: 0;
   }
-  code::before, code::after {
+  code::before,
+  code::after {
     content: normal;
   }
 }
+
 code {
   font-family: $font-code;
   font-size: 90%;
   background-color: $smoke;
   padding: 4px;
 }
+
 .sans {
   font-family: "Open Sans", "Myriad Pro", "Myriad", sans-serif;
 }
-.mono, tt {
+
+.mono,
+tt {
   font-family: $font-code;
 }
-ul, ol {
+
+ul,
+ol {
   margin-bottom: $vertical-rhythm;
   li {
     margin-left: 1.25em;
@@ -278,15 +335,18 @@ ul, ol {
     }
   }
 }
+
 ul li {
   list-style-type: disc;
 }
+
 %blockquote {
   font-family: $font-header;
   content: '\201C';
   font-size: 35px;
   color: $accent;
 }
+
 blockquote {
   font-family: $font-header;
   text-align: center;
@@ -303,14 +363,18 @@ blockquote {
     content: '\201D';
   }
 }
+
 .posts-list {
   margin: 0 0 $vertical-rhythm;
 }
-.sub-header, time {
+
+.sub-header,
+time {
   @include size(p);
   color: $storm;
   margin-bottom: $vertical-rhythm;
 }
+
 .content {
   text-align: left;
   width: 100%;
@@ -318,29 +382,8 @@ blockquote {
     margin-left: 3px;
   }
   a {
-    text-shadow: 0.03em 0 #fff,
-    -0.03em 0 #fff,
-    0 0.03em #fff,
-    0 -0.03em #fff,
-    0.06em 0 #fff,
-    -0.06em 0 #fff,
-    0.09em 0 #fff,
-    -0.09em 0 #fff,
-    0.12em 0 #fff,
-    -0.12em 0 #fff,
-    0.15em 0 #fff,
-    -0.15em 0 #fff,
-    0.03em 0.075em #fff,
-    -0.03em 0.075em #fff,
-    0.06em 0.075em #fff,
-    -0.06em 0.075em #fff,
-    0.09em 0.075em #fff,
-    -0.09em 0.075em #fff,
-    0.12em 0.075em #fff,
-    -0.12em 0.075em #fff,
-    0.15em 0.075em #fff,
-    -0.15em 0.075em #fff;
-    background-image: linear-gradient($accent,$accent);
+    text-shadow: 0.03em 0 #fff, -0.03em 0 #fff, 0 0.03em #fff, 0 -0.03em #fff, 0.06em 0 #fff, -0.06em 0 #fff, 0.09em 0 #fff, -0.09em 0 #fff, 0.12em 0 #fff, -0.12em 0 #fff, 0.15em 0 #fff, -0.15em 0 #fff, 0.03em 0.075em #fff, -0.03em 0.075em #fff, 0.06em 0.075em #fff, -0.06em 0.075em #fff, 0.09em 0.075em #fff, -0.09em 0.075em #fff, 0.12em 0.075em #fff, -0.12em 0.075em #fff, 0.15em 0.075em #fff, -0.15em 0.075em #fff;
+    background-image: linear-gradient($accent, $accent);
     background-size: 1px 2px;
     background-repeat: repeat-x;
     background-position: 0 95%;
@@ -350,20 +393,24 @@ blockquote {
     }
   }
 }
+
 .highlight {
   margin: 10px 0;
 }
+
 .links {
   margin: 50px 0 0;
-  :nth-child(2) {
+   :nth-child(2) {
     float: right;
   }
 }
+
 .full {
   height: 100vh;
   top: 0;
   bottom: 0;
 }
+
 .about {
   width: 100%;
   background-color: $smoke;
@@ -373,29 +420,8 @@ blockquote {
     margin-top: $vertical-rhythm;
   }
   a {
-    text-shadow: 0.03em 0 #fff,
-    -0.03em 0 #fff,
-    0 0.03em #fff,
-    0 -0.03em #fff,
-    0.06em 0 #fff,
-    -0.06em 0 #fff,
-    0.09em 0 #fff,
-    -0.09em 0 #fff,
-    0.12em 0 #fff,
-    -0.12em 0 #fff,
-    0.15em 0 #fff,
-    -0.15em 0 #fff,
-    0.03em 0.075em #fff,
-    -0.03em 0.075em #fff,
-    0.06em 0.075em #fff,
-    -0.06em 0.075em #fff,
-    0.09em 0.075em #fff,
-    -0.09em 0.075em #fff,
-    0.12em 0.075em #fff,
-    -0.12em 0.075em #fff,
-    0.15em 0.075em #fff,
-    -0.15em 0.075em #fff;
-    background-image: linear-gradient($accent,$accent);
+    text-shadow: 0.03em 0 #fff, -0.03em 0 #fff, 0 0.03em #fff, 0 -0.03em #fff, 0.06em 0 #fff, -0.06em 0 #fff, 0.09em 0 #fff, -0.09em 0 #fff, 0.12em 0 #fff, -0.12em 0 #fff, 0.15em 0 #fff, -0.15em 0 #fff, 0.03em 0.075em #fff, -0.03em 0.075em #fff, 0.06em 0.075em #fff, -0.06em 0.075em #fff, 0.09em 0.075em #fff, -0.09em 0.075em #fff, 0.12em 0.075em #fff, -0.12em 0.075em #fff, 0.15em 0.075em #fff, -0.15em 0.075em #fff;
+    background-image: linear-gradient($accent, $accent);
     background-size: 2px 3px;
     background-repeat: repeat-x;
     background-position: 0 95%;
@@ -405,8 +431,10 @@ blockquote {
     }
   }
 }
+
 .gallery {
-  div[class^="col-"], div[class*=" col-"] {
+  div[class^="col-"],
+  div[class*=" col-"] {
     padding: 0;
     position: relative;
     &:hover .overlay {
@@ -417,6 +445,7 @@ blockquote {
     padding: $vertical-rhythm * 3;
   }
 }
+
 .overlay {
   position: absolute;
   top: 0;
@@ -438,12 +467,14 @@ blockquote {
     color: #FFF;
   }
   p {
+    margin-bottom: 0px !important;
     color: #FFF !important;
   }
   h3 {
     font-family: $font-body;
   }
 }
+
 .blog {
   min-height: 100vh;
   h3 {
@@ -451,6 +482,7 @@ blockquote {
     font-family: $font-body;
   }
 }
+
 .contact {
   width: 100%;
   background-color: $smoke;
@@ -463,6 +495,7 @@ blockquote {
     padding: 11px;
   }
 }
+
 input {
   background-color: #FFF;
   border-color: $smoke;
@@ -484,15 +517,18 @@ input {
     }
   }
 }
+
 textarea {
   @extend input;
   min-height: $vertical-rhythm * 4;
   overflow: auto;
 }
+
 footer {
   height: $vertical-rhythm * 6;
   background-color: $black;
-  div, a {
+  div,
+  a {
     color: #FFF;
   }
 }

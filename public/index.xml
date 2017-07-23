@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Faisal&#39;s Portfolio</title>
+    <link>/</link>
+    <description>Recent content on Faisal&#39;s Portfolio</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language>
+    <copyright>true</copyright>
+    <lastBuildDate>Sun, 23 Oct 2016 13:12:06 -0400</lastBuildDate>
+    
+	<atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Book It</title>
+      <link>/blog/bookit/</link>
+      <pubDate>Sun, 23 Oct 2016 13:12:06 -0400</pubDate>
+      
+      <guid>/blog/bookit/</guid>
+      <description>Introduction Book It is a Hair stylist Appointment booking solution. The user can book a time on a Hair stylist schedule. The hair stylist has the ability to block out certain times and see who has booked on their schedule. Currently Available on IOS and Android platform. Used Firebase as a live database with instant socket connection. So any changes made by a user is instant across all users. Developed multiple user roles, with the ability to log in with social media.</description>
+    </item>
+    
+    <item>
+      <title>NYC Properties Closures</title>
+      <link>/blog/nyc-properties-auction/</link>
+      <pubDate>Fri, 23 Sep 2016 13:12:06 -0400</pubDate>
+      
+      <guid>/blog/nyc-properties-auction/</guid>
+      <description>Introduction An properties aggravation app, this app scrapes the data from nyc courts website to get a list of all the properties that will be on auction, also displays the properties on google maps for easy navigation. Built as a Progressive web app(PWA), works in offline environment and has a service worker that will automatically store all application data(API calls). Build with ionic 2 and is deployed to android playstore.</description>
+    </item>
+    
+    <item>
+      <title>City Grade</title>
+      <link>/blog/city-grade/</link>
+      <pubDate>Sat, 23 Jan 2016 13:12:06 -0400</pubDate>
+      
+      <guid>/blog/city-grade/</guid>
+      <description>Introduction Hybrid Application to show Sanitation grades for restaurants in NYC. Used Electon.js to build it for all possible platforms including osx, windows, Iphone and Android build. Built using responses design in mind so it is can work on all platform. Used native Cordova geolocation to pick up user locations and show nearby grades for nearby restaurants. Built for all platforms using electron.js, ionic.js and angular.js. Developed ability to search by restaurant&amp;rsquo;s name, Phone number, location, and by grades.</description>
+    </item>
+    
+    <item>
+      <title>Service Link</title>
+      <link>/blog/service-link/</link>
+      <pubDate>Thu, 23 Jul 2015 13:12:06 -0400</pubDate>
+      
+      <guid>/blog/service-link/</guid>
+      <description>Introduction Build Hybrid Application using Ionic, Node, and MongoDB. Build common middle layer in Node to support mobile and desktop application builds. Built various data visualizations using D3.js Created JSON Web token based approach for user logins. Build appraiser calendar functionality to book appointments and check availability Created 100+ screens in four weeks to support six different user roles into the system Created an interactive map using Leaflet and D3.</description>
+    </item>
+    
+    <item>
+      <title>Project Holems</title>
+      <link>/blog/project-holmes/</link>
+      <pubDate>Mon, 23 Mar 2015 13:12:06 -0400</pubDate>
+      
+      <guid>/blog/project-holmes/</guid>
+      <description>Introduction A suite of Application focused on money laundering/tracking using transactional data and social feed for users. Architected and developed a risk assessment toolset for money laundering/tracking. Toolset included three application real-time KYC, investigator application, and customer 360. Used leaflet and d3 to draw a wide array of visualization including time-based transactions and interactive d3 dashboards. Used real time social feeds and user transaction history to calculate risk scores for individual users and entities when onboarding with KYC.</description>
+    </item>
+    
+    <item>
+      <title>Stack Store</title>
+      <link>/blog/stack-store/</link>
+      <pubDate>Sun, 23 Mar 2014 13:12:06 -0400</pubDate>
+      
+      <guid>/blog/stack-store/</guid>
+      <description>Introduction An e-commerce website that includes all aspects of shopping online; include shopping by category, checkout with Stripe, a recommendation engine, and fully built shopping cart. Used Stripe API to make the checkout and payment a seamless process. Built on Mean Stack includes a MongoDB for a database to store all products with completely built schemas. Has complete user and admin side, a user can view and purchase items and admin can post, delete and update items.</description>
+    </item>
+    
+    <item>
+      <title>Migrate to Hugo from Jekyll</title>
+      <link>/migrate-from-jekyll/</link>
+      <pubDate>Mon, 10 Mar 2014 00:00:00 +0000</pubDate>
+      
+      <guid>/migrate-from-jekyll/</guid>
+      <description>Move static content to static Jekyll has a rule that any directory not starting with _ will be copied as-is to the _site output. Hugo keeps all static content under static. You should therefore move it all there. With Jekyll, something that looked like
+▾ &amp;lt;root&amp;gt;/ ▾ images/ logo.png  should become
+▾ &amp;lt;root&amp;gt;/ ▾ static/ ▾ images/ logo.png  Additionally, you&amp;rsquo;ll want any files that should reside at the root (such as CNAME) to be moved to static.</description>
+    </item>
+    
+    <item>
+      <title>Trait</title>
+      <link>/blog/trait/</link>
+      <pubDate>Thu, 23 Jan 2014 13:12:06 -0400</pubDate>
+      
+      <guid>/blog/trait/</guid>
+      <description>Introduction User profile information gathered from various inputs and gives users personality trait, which can be displayed in various formats. Harnessed IBM&amp;rsquo;s Watson API to display personality trait according to the various law of physiology. Implemented Linkedin API and Twitter API to get user profile information. Built Fullstack app using MEAN model and used Mongoose to manage MongoDB. Interfaced with d3.js to make an interactive 3D chart to display the user model to narrow down to five basic needs.</description>
+    </item>
+    
+    <item>
+      <title>Liens On My Property</title>
+      <link>/gallery/leans-on-my-property/</link>
+      <pubDate>Sat, 15 Jul 2017 21:52:57 -0700</pubDate>
+      
+      <guid>/gallery/leans-on-my-property/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>About Me</title>
+      <link>/about/</link>
+      <pubDate>Tue, 27 Jun 2017 17:39:21 -0700</pubDate>
+      
+      <guid>/about/</guid>
+      <description>Faisal Nawaz is a Full Stack Developer who specializes in Agile and reactive development. His focus is to evolve with the continuously changing landscape of the technical world in order to enhance his skills and to improve user experience. Faisal is committed to progress – this has greatly shaped his abilities in cutting edge development. He draws his experience from having worked freelance as well as for Enterprise level dev-shops.</description>
+    </item>
+    
+    <item>
+      <title>Booked It -Your Appointment</title>
+      <link>/gallery/book-it/</link>
+      <pubDate>Mon, 15 May 2017 22:25:16 -0700</pubDate>
+      
+      <guid>/gallery/book-it/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Microservice forclosed properties scrapper</title>
+      <link>/gallery/scrape-micoservices/</link>
+      <pubDate>Mon, 15 May 2017 22:25:02 -0700</pubDate>
+      
+      <guid>/gallery/scrape-micoservices/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>City Grade</title>
+      <link>/gallery/city-grade/</link>
+      <pubDate>Mon, 15 May 2017 21:57:17 -0700</pubDate>
+      
+      <guid>/gallery/city-grade/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>NYC Properties Auction</title>
+      <link>/gallery/properties-foreclosed/</link>
+      <pubDate>Mon, 15 May 2017 21:52:57 -0700</pubDate>
+      
+      <guid>/gallery/properties-foreclosed/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
